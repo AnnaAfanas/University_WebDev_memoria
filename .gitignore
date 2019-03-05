@@ -9,3 +9,4 @@ myvenv
 geckodriver.log
 .idea
 htmlcov
+.cov*
