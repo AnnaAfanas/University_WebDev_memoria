@@ -1,0 +1,37 @@
+{% extends 'memoria/base.html' %}
+{% block content %}
+	<title>Профиль</title>
+	
+	<center>
+	<div class="user-info-avatar" id="avatar">
+	</div>
+	</center>
+
+	<center>
+	<h3>{{user.username}}</h3>
+	</center>
+
+	<div class="main_container">
+	<input class="some_button"
+		type="button"
+		name="books_list_button"
+		onclick="location.href='/books'"
+		value="МОИ КНИГИ">
+	<input class="some_button"
+		type="button"
+		name="films_list_button"
+		onclick="location.href='/films'"
+		value="МОИ ФИЛЬМЫ">
+	<input class="some_button"
+		type="button"
+		name="tvseries_list_button"
+		onclick="location.href='/tvseries'"
+		value="МОИ СЕРИАЛЫ">
+	<input class="some_button"
+		type="button"
+		name="exit_button"
+		onclick="location.href='/logout'"
+		value="Выйти">
+	</div>
+
+{% endblock %}

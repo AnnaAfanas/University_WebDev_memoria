@@ -1,0 +1,321 @@
+.main_container{
+	/*box-shadow: 0 0 1px rgba(0,0,0,0.5);*/
+	background: #C3E8DC;
+	color: black;
+	/*border-radius: 1em;*/
+	padding: 1em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+  	margin-top: 120px;
+	margin-right: -50%;
+	transform: translate(-50%, -50%); 
+}
+
+.super_main_container{
+
+}
+
+.buttons{
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 21%;
+	width: 60%;
+}
+
+.buttons1{
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20%;
+	width: 65%;
+}
+
+.main_container p{
+	text-align: center;
+}
+
+.main_container1{
+	background: #C3E8DC;
+	color: black;
+	/*border-radius: 1em;*/
+	padding: 1em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+  	margin-top: 40px;
+	margin-right: -50%;
+	transform: translate(-50%, -50%); 
+}
+
+.main_container1 p{
+	text-align: center;
+}
+
+.main_container2{
+	/*box-shadow: 0 0 1px rgba(0,0,0,0.5);*/
+	background: #C3E8DC;
+	color: black;
+	/*border-radius: 1em;*/
+	display: inline-block;
+	border-radius: 1em;
+	padding: 1em;
+/*	position: absolute;
+	top: 0;
+	left: 40%;
+  	margin-top: 190px;
+	margin-right: -50%;
+	transform: translate(-50%, -50%); */
+}
+
+.main_container2 p{
+	text-align: center;
+}
+
+.main_container3{
+	/*box-shadow: 0 0 1px rgba(0,0,0,0.5);*/
+	background: #C3E8DC;
+	color: black;
+	/*border-radius: 1em;*/
+	display: inline-block;
+	border-radius: 1em;
+	padding: 1em;
+/*	position: absolute;
+	top: 0;
+	left: 60%;
+  	margin-top: 190px;
+	margin-right: -50%;
+	transform: translate(-50%, -50%); */
+}
+
+.main_container3 p{
+	text-align: center;
+}
+
+.main_container4{
+	background: #C3E8DC;
+	color: black;
+	margin: auto;
+	display: inline-block;
+	padding: 1em;
+	/*box-shadow: 0 0 1px rgba(0,0,0,0.5);
+	background: white;
+	color: black;
+	border-radius: 1em;
+	padding: 1em;
+	position: absolute;
+	top: 80%;
+	left: 40%;
+  	margin-top: 0;
+	margin-right: -50%;
+	transform: translate(-50%, -50%); */
+}
+
+.main_container4 p{
+	text-align: center;
+}
+
+.main_container5{
+	background: #C3E8DC;
+	color: black;
+	margin: auto;
+	display: inline-block;
+	padding: 1em;
+	/*box-shadow: 0 0 1px rgba(0,0,0,0.5);
+	background: white;
+	color: black;
+	border-radius: 1em;
+	padding: 1em;*/
+	/*position: absolute;
+	top: 80%;
+	left: 60%;
+  	margin-top: 0;
+	margin-right: -50%;
+	transform: translate(-50%, -50%); */
+}
+
+.main_container5 p{
+	text-align: center;
+}
+
+.main_container6{
+	background: #C3E8DC;
+	color: black;
+	padding: 1em;
+	position: absolute;
+	top: 0;
+	left: 50%;
+  	margin-top: 190px;
+	margin-right: -50%;
+	transform: translate(-50%, -50%); 
+}
+
+.some_button{
+	display: block;
+	background: #C3E8DC;
+	box-shadow: 0;
+	border: 0;
+	width: 100%;
+	margin: 5px;
+	padding: 5px;
+	color: #1D634C;
+	font-family: 'Amatic SC', cursive;
+    font-size: 35px;
+}
+.some_button:hover,
+.some_button.hover {
+	box-shadow: 0;
+	border: 0;
+	outline: none;
+	background-color: #C3E8DC;
+	text-shadow: none;
+	color: #FAEE69;
+	font-family: 'Amatic SC', cursive;
+    font-size: 35px;
+}
+.some_button:active,
+.some_button.active {
+	box-shadow: 0;
+	border: 0;
+	outline: none;
+	background-color: #C3E8DC;
+	text-shadow: none;
+	color: #FAEE69;
+	font-family: 'Amatic SC', cursive;
+    font-size: 35px;
+}
+
+.information{
+	margin-left: auto;
+	margin-right: auto;
+	width: 45%;
+	top: 190px;
+	margin-top: 10%;
+	margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: #1D634C;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.main_list_container{
+	display: block;
+	background: #C3E8DC;
+	color: #1D634C;
+	border-radius: none;
+	padding: 1em;
+	/*position: absolute;*/
+	margin-top: 20px; 
+	margin-left: auto;
+	margin-right: auto;
+	/*top: 50%;
+	margin-top: 190px;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);*/
+	width: 60%;
+	font-size: 25px;
+	font-family: 'Philosopher', sans-serif;
+}
+
+.record{
+	text-align: center;
+	margin: 15px;
+	padding: 20px;
+	border-radius: none;
+	background-color:#C3E8DC; 
+	color: #1D634C;
+	font-size: 25px;
+	font-family: 'Philosopher', sans-serif;
+}
+
+a{
+	display: block;
+	text-decoration: none;
+	font-size: 25px;
+	font-family: 'Philosopher', sans-serif;
+}
+
+a:hover {
+	color: #FAEE69;
+	text-decoration: none;
+	background-color: #C3E8DC;
+	font-size: 25px;
+	font-family: 'Philosopher', sans-serif;
+}
+
+.signup{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+  	margin-top: 60px;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+
+.signup input {
+	margin: 20px;
+	border: 0px;
+   	border-radius: 5em;
+   	background: #ffffff;
+   	outline: none; 
+   	height: 50px;
+   	width: 35%;
+   	font-size: 30px; // Размер шрифта
+   	font-family: 'Philosopher', sans-serif;
+   	padding: 15px;
+}
+
+.signup textarea {
+	/* = Убираем скролл */
+	overflow: auto;
+
+	/* = Убираем увеличение */
+	resize: none;
+	width: 300px;
+	height: 50px;
+
+	/* = Добавим фон, рамку, отступ*/
+	background: #f6f6f6;
+	border: none;
+	border-radius: 5em;
+	padding: 5px 0 8px 20px;
+}
+
+.signup label {
+	margin: 20px;
+	width: 50%;
+	float: left;
+	color: #1D634C;
+	font-size: 30px;
+   	font-family: 'Philosopher', sans-serif;
+}
+
+.input_button{
+	background: #C3E8DC;
+	color: black;
+	padding: 1em;
+	position: absolute;
+	top: 0;
+	left: 50%;
+  	margin-top: 41%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%); 
+
+}
+
+.title_style{
+	top: 90px;
+	margin-top: 4%;
+	margin-bottom: 20px;
+    text-align: center;
+    font-size: 50px;
+    color: #1D634C;
+    font-family: 'Amatic SC', cursive;
+}
+
+h3{
+	font-size: 35px;
+	color: #2A9673;
+	font-family: 'Philosopher', sans-serif;
+}
+

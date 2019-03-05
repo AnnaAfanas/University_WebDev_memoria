@@ -1,0 +1,33 @@
+{% extends 'memoria/base.html' %}
+{% block content %}
+    <title>Редактирование книги</title>
+
+	<div class="title_style">
+        <b>Редактировать</b>
+    </div>
+
+     <form method="POST">
+
+    {% csrf_token %}
+
+    <div class="signup">
+
+        <div>        
+            <label>Введите название</label>
+            <input type="text" name="name" value="{{book.name}}" />
+        </div>
+        
+        <div>
+            <label>Введите комментарий</label>
+            <input type="text" name="comment" value="{{book.comment}}" />
+            <!-- <textarea>{{book.comment}}</textarea>  -->
+        </div>
+        
+    </div>
+
+    <div class="input_button">
+            <input class="some_button" type="submit" value="Сохранить" >
+    </div>
+
+    </form>
+{% endblock %}

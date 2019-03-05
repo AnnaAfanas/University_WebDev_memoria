@@ -1,0 +1,32 @@
+{% extends 'memoria/base.html' %}
+{% block content %}
+	<title>Авторизация</title>
+
+	<div class="title_style">
+		<b>Авторизация</b>
+	</div>
+
+	<form action="{% url 'login' %}" method='post'>
+
+		<div class="signup">
+
+		{% csrf_token %}
+
+		{{ form.username.label_tag }}
+		{{ form.username }}
+		<br>
+		{{ form.password.label_tag }}
+		{{ form.password }}
+		<br>
+
+		</div>
+
+		<div class="input_button">
+			<input class="some_button" type="submit" value="Войти" >
+		</div>
+
+	</form>
+
+
+	
+{% endblock %}

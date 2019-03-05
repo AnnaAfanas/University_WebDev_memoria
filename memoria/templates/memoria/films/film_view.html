@@ -1,0 +1,37 @@
+{% extends 'memoria/base.html' %}
+{% block content %}
+	<title>Информация о фильме</title>
+
+	<div class="main_container6">
+		<input class="some_button"
+			type="button"
+			onclick="location.href='/films'"
+			value="Назад">
+	</div>
+
+	<div class="information">
+		<strong><p>{{film.name}}</p></strong>	
+		<p>{{film.comment}}</p>
+		<strong><p>{{film.published_date}}</p></strong>
+	</div>	
+
+	<div class="buttons1">
+		<div class="main_container5">
+			<input class="some_button"
+				type="button"
+				onclick="location.href='{% url 'film_edit' pk=film.pk  %}'"
+				value="Редактировать">
+		</div>
+
+		<div class="main_container4">
+			<input class="some_button"
+				type="button"
+				onclick="location.href='{% url 'film_delete' pk=film.pk  %}'"
+				value="Удалить">
+		</div>
+
+	</div>
+
+<!-- 	<button> <a href="{% url 'film_edit' pk=film.pk  %}">Edit</a> </button>
+	<button><a href="{% url 'film_delete' pk=film.pk  %}">Delete</a></button> -->
+{% endblock %}

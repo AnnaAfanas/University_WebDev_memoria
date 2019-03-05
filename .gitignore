@@ -1,0 +1,11 @@
+*.pyc
+*~
+__pycache__
+.DS_Store
+db.sqlite3
+myvenv
+.vscode/
+=
+geckodriver.log
+.idea
+htmlcov

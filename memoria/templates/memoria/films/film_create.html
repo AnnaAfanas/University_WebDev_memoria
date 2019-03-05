@@ -1,0 +1,32 @@
+{% extends 'memoria/base.html' %}
+{% block content %}
+
+	<title>Добавление фильма</title>
+
+	<div class="title_style">
+        <b>Новый фильм</b>
+    </div>
+
+    <form method="POST" action="{% url 'film_create' %}">
+<!-- 
+    	{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Добавить</button> -->
+
+    <div class="signup">
+
+	    {% csrf_token %}
+	    {% for field in form %}
+			        {{ field.label_tag }} {{ field }}
+	    {% endfor %}
+   
+        
+    </div>
+
+    <div class="input_button">
+            <input class="some_button" type="submit" value="Добавить" >
+    </div>
+
+    </form>
+
+{% endblock %}

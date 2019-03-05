@@ -1,0 +1,38 @@
+{% extends 'memoria/base.html' %}
+{% block content %}
+	<title>Информация о книге</title>
+
+	<div class="main_container6">
+	<input class="some_button"
+		type="button"
+		onclick="location.href='/books'"
+		value="Назад">
+	</div>
+
+	<div class="information">
+		<strong><p>{{book.name}}</p></strong>
+		<p>{{book.comment|linebreaksbr}}</p>
+		<strong><p>{{book.published_date}}</p></strong>
+	</div>
+
+	<div class="buttons1">
+		<div class="main_container5">
+			<input class="some_button"
+				type="button"
+				onclick="location.href='{% url 'book_edit' pk=book.pk  %}'"
+				value="Редактировать">
+		</div>
+
+		<div class="main_container4">
+			<input class="some_button"
+				type="button"
+				onclick="location.href='{% url 'book_delete' pk=book.pk  %}'"
+				value="Удалить">
+		</div>
+
+	</div>
+	
+
+	<!-- <button> <a href="{% url 'book_edit' pk=book.pk  %}">Edit</a> </button>
+	<button><a href="{% url 'book_delete' pk=book.pk  %}">Delete</a></button> -->
+{% endblock %}

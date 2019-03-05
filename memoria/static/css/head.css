@@ -1,0 +1,14 @@
+h1 {
+    color: white;
+    background-color: #42D6A5;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 96px;
+	margin-top: 0px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1000px){
+    h1{
+        font-size: 200px;
+    }
+}

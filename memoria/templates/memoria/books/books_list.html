@@ -1,0 +1,57 @@
+{% extends 'memoria/base.html' %}
+{% block content %}
+	<title>Книги</title>
+
+	<div class="super_main_container">
+
+		<div class="buttons">
+			<div class="main_container2">
+				<input class="some_button"
+					type="button"
+					onclick="location.href='/profile'"
+					value="Назад">
+			</div>
+
+			<div class="main_container3">
+				<input class="some_button"
+					type="button"
+					name="add_button"
+					onclick="location.href='/books/new'"
+					value="Добавить">
+			</div>
+
+			<h2>МОИ КНИГИ</h2>
+
+			<style>
+  			h2 {color: #1D634C;
+  				font-family: 'Philosopher', sans-serif; 
+  				font-size: 35px;
+  				margin-left: 5%;}
+			</style>
+
+		</div>
+		
+
+		<div class="main_list_container">
+			{% for book in books %}	
+				<a class="record" href="{% url 'book_view' pk=book.pk %}">{{book.name}}</a>
+			{% endfor %}
+		</div>
+
+	</div>
+	
+
+	<!--{% for object in list %}
+		{% if forloop.counter < n_current %}
+
+		<div class="main_list_container">
+			<a class="record" href="{% url 'book_view' pk=object.pk %}">{{object.name}}</a>
+		</div>
+		{% endif %}
+	{% endfor %} -->
+
+	<!-- <input type="button" onclick="nextPage()" value="Далее"/> -->
+
+
+
+{% endblock %}

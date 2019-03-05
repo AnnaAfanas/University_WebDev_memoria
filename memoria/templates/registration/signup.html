@@ -1,0 +1,29 @@
+{% extends 'memoria/base.html' %}
+{% block content %}
+	<title>Регистрация</title>
+
+	<div class="title_style">
+		<b>Регистрация</b>
+	</div>
+
+	<form method="POST" action="{% url 'signup' %}">
+	    {% csrf_token %}
+
+	    <div class="signup">
+	    {% for field in form %}
+		    <div class="fieldWrapper">
+		        {{ field.errors }}
+		        {{ field.label_tag }} {{ field }}
+		    </div>
+		{% endfor %}
+
+	    </div>
+
+	    </div>
+
+		<div class="input_button">
+			<input class="some_button" type="submit" >
+		</div>
+
+	</form>
+{% endblock %}

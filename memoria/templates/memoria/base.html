@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Philosopher:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Philosopher&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:700&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Philosopher:700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'css/head.css' %}">
+	<link rel="stylesheet" href="{% static 'css/avatar.css' %}">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<meta charset="UTF-8">
+</head>
+<body>
+	<style>
+  		body { background-color: #C3E8DC}
+	</style>
+	<center>
+		<h1>Memoria</h1>
+	</center>
+
+	{% block content %}
+    {% endblock %}
+
+ 	<script>
+		var name = "{{user.username}}";
+		var letter = name.substr(0, 1);
+		letter = letter.toUpperCase();
+		var backgroundColor = '#FAEE69';
+		var elementAvatar = document.getElementById("avatar");
+		var elementName = document.getElementById("name");
+
+		elementAvatar.innerText = letter;
+		elementAvatar.style.backgroundColor = backgroundColor;
+	</script>
+
+</body>
+</html>

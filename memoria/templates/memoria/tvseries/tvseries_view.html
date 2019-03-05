@@ -1,0 +1,35 @@
+{% extends 'memoria/base.html' %}
+{% block content %}
+	<title>Информация о сериале</title>
+
+	<div class="main_container6">
+	<input class="some_button"
+		type="button"
+		onclick="location.href='/tvseries'"
+		value="Назад">
+	</div>
+
+	<div class="information">
+		<strong><p>{{tvseries.name}}</p></strong>
+		<p>{{tvseries.comment}}</p>
+		<strong><p>{{tvseries.published_date}}</p></strong>
+	</div>
+
+	<div class="buttons1">
+		<div class="main_container5">
+			<input class="some_button"
+				type="button"
+				onclick="location.href='{% url 'tvseries_edit' pk=tvseries.pk  %}'"
+				value="Редактировать">
+		</div>
+
+		<div class="main_container4">
+			<input class="some_button"
+				type="button"
+				onclick="location.href='{% url 'tvseries_delete' pk=tvseries.pk  %}'"
+				value="Удалить">
+		</div>
+
+	</div>
+	
+{% endblock %}
